@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HTML Forms</h2>
+    <form>
+        <label for="fname">First name </label><br>
+        <input type="text" id="fname" namne="fname" value="sameer"><br><br>
+        <label for="lname">Last name </label><br>
+        <input type="text" id="lnsme" name="lname" value="ansari"><br><br>
+        <input type="submit" value="submit"><br>
+        </form>
+
+
+        <form> 
+            <br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="html" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="javascript">
+        <label for="javascript">JAVASCRIPT</label>
+        </form>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nostrum autem sequuntur.</p><br>
+        
+            <iframe width="500" height="400"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </form>
+        <form>
+            <h3>the form navoliate attribute</h3>
+            <label for="email">enter your email address </label>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="submit">
+        </form>
+        <canvas id="mycanvas" width="200" height="100" style="border: 1px;solid: #000;">your browser dosent support in html</canvas>
+        <script>
+            var c =document.getElementById("mycanvas");
+            var ctx=c.getcontex("2d");
+            ctx.moveTo(0,0);
+            ctx.lineto(200,100);
+            ctx.strock();
+        </script>
+</body>
+</html>

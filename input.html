@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .note{
+            font-size: 100;
+            color: red;
+        }
+    </style>
+    <style>
+        #myheader{
+            background-color: lightblue;
+            color: black;
+            padding: 50 px;
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> The id Attributes</h2>
+    <h1 id="myheader">my Header</h1>
+    <h1>my <span class="note">important </span>heading</h1>
+    <p>this is some <span class="note">important </span>text</p>
+    <button onclick="myfunction()">Hide element</button>
+
+    <h1>The input element</h1>
+    <form action="/action_page.php">
+        <label for="fname">firstname:</label>
+        <input type="text" id="fname" name="fname"><br><br/>
+        <label for="lname">last name;</label>
+        <input type="text" id="lname" name="lname"><br><br/>
+        <input type="submit" value="submit">
+    </form>
+    <p>Click the "submit" and the form-data will be send be a page on the server called action_page.php</p>
+    <h1>Multiples DIV element</h1>
+    <div style="background-color: lightgray;">
+        <p>london is the capital of england </p>
+        <p>London has over 13 million inheritands</p>
+    </div>
+    <div style="background-color: skyblue;">
+        <h2>Rome</h2>
+        <p>rome is the capital of italy</p>
+        <P>ro
+    <div style="background-color: blanchedalmond;">
+        <h3>Oslo</h3>
+        <p>oslo is the capital of norway</p>
+        <P>oslo has over 600.000 inheritans</P>
+    </div>
+    <p>CSS style to add to make it easier to  , and to make them to pretty</p><br>
+    <iframe src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfXiiDQTiLgf5c9LAZ6edkeKv0aX4_l_rwCA&s" style="height:200; width:200" title="descption"></iframe><br>
+
+    <h3> the first javascript </h3>
+    <p>javascript change the value of a source </p>
+
+    <script>
+        function light (sw){
+        var pic;
+        if (sw==0){
+            pic ="pic_bulboff.gif"
+        }else{
+            pic ="pic_bulbon.gif"
+        }
+        document.getElementById('myimage').src =pic;
+    }
+    </script>
+    <button type="button" onclick="light(1)">light on</button>
+    <button type="button" onclick="light(0)">light off</button>
+
+</body> 
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS template</title>
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <style>
+        {
+            boxing-sizing:border-size;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: rgb(247, 148, 20);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: aquamarine;
+        }
+        section{
+            display: -webkit-box;
+            display: flex;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0%;
+        }
+        article{
+            -webkit-box-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color:lightgrey ;
+            padding: 10%;
+            }
+            footer{
+                background-color: beige;
+                padding: 0%;
+                text-align: center;
+                color: black;
+            }
+            @media (max-width:600){
+                section{
+                    -webkit-flex-direction: column;
+                    flex-direction: column;
+                }
+            }
+
+    </style>
+</head>
+
+<body>
+    <h2>CSS layout flexbox</h2>
+    <p>in this example, we have created a header and to column/box </p>
+    <header>
+        cities
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">london</a></li>
+                <li><a href="#">paris</a></li>
+                <li><a href="#">tokyo</a></li>
+            </ul>
+        </nav>
+        <article>
+                <h1>london</h1>
+                <p>london is a capital of england</p>
+                <p>paris is a capital of 
+                </p>
+        </article>
+    </section>
+    <footer>
+        <p>footer</p>
+    </footer>
+    
+</body>
+</html>
